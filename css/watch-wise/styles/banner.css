@@ -1,0 +1,23 @@
+.banner {
+    background-image: url('../assets/banner.jpg');
+    width: 100%;
+    height: 530px;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    h1 {
+        font-size: 60px;
+    }
+    p {
+        font-size: 17px;
+        width: 65vw;
+    }
+}

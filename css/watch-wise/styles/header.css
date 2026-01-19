@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+}
+input , button {
+    border: none;
+}
+
+header {
+    background-color: rgb(39, 37, 37);
+    color: white;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+
+    form {
+
+        input {
+            padding: 7px 10px;
+            width: 230px;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 7px 11px;
+            border-radius: 5px;
+        }
+
+    }
+}
