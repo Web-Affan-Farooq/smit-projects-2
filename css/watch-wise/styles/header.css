@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
     box-sizing: border-box;
 }
 body {
@@ -15,9 +16,14 @@ header {
     color: white;
     display: flex;
     padding: 10px;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width:500px) {
+        gap: 13px;
+        padding:10px 40px;
+    }
     form {
 
         input {
