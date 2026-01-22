@@ -1,0 +1,249 @@
+/* --- Global Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Header & Navbar --- */
+.navbar {
+    background-color: #111;
+    color: white;
+    padding: 15px 0;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.search-bar {
+    flex-grow: 1;
+    position: relative;
+    max-width: 500px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 0.9rem;
+}
+
+/* --- Product Grid --- */
+.product-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* --- Gallery --- */
+.main-image img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbnails img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+/* --- Product Details --- */
+.details-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+}
+
+.details h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.brand {
+    color: #888;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.price-row {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.current-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.old-price {
+    color: #aaa;
+    text-decoration: line-through;
+    font-size: 0.9rem;
+}
+
+.discount {
+    color: #2e7d32;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.description {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.rating {
+    margin-bottom: 25px;
+}
+
+.stars {
+    color: #d4a017;
+    font-size: 1.2rem;
+}
+
+.rating-text {
+    font-size: 0.9rem;
+    color: #555;
+    margin-left: 5px;
+}
+
+/* --- Controls --- */
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.quantity-selector button {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ccc;
+    background: #f0f0f0;
+    cursor: pointer;
+}
+
+.quantity-selector input {
+    width: 40px;
+    height: 35px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: #0d2137;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #163252;
+}
+
+/* --- Promo Box --- */
+.promo-box {
+    background-color: #ebf2ff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.promo-box h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.promo-box p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.btn-secondary {
+    background-color: #0d2137;
+    color: white;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* --- Responsive Layout --- */
+@media (max-width: 768px) {
+    .product-page {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-links {
+        display: none; /* Simplification for mobile */
+    }
+    
+    .details-card {
+        padding: 20px;
+    }
+}
