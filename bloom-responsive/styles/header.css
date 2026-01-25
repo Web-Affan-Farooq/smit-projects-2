@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+    font-family: sans-serif;
+}
+
+:root {
+    --background:#272626;
+    --foreground:#ff9100;
+    --accent:#dededed1;
+}
+
+header {
+    background-color: var(--background);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    position: relative;
+}
+
+header > .navbar > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px; 
+}
+
+header > .navbar > ul > li {
+    list-style-type: none;
+    color: var(--accent);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header > .navbar > ul > li:hover {
+    color: var(--foreground);
+}
+
+#menu-bar, .menu-icon {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    .menu-icon {
+        display: block;
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--background);
+        border-top: 1px solid #444;
+        display: none; 
+    }
+
+    header > .navbar > ul {
+        flex-direction: column;
+        padding: 20px;
+        gap: 0;
+    }
+
+    header > .navbar > ul > li {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    /* Show menu when checkbox is checked */
+    #menu-bar:checked ~ .navbar {
+        display: block;
+    }
+}
