@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My JavaScript Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        
+        nav a:hover {
+            background-color: #555;
+        }
+        
+        main {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        
+        .highlight {
+            background-color: yellow;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+    
+    <!-- 7a. JavaScript in Head section -->
+    <script>
+        // This runs before page loads
+        console.log("This script is in the HEAD section");
+        
+        function greetUser() {
+            alert("Welcome to my website!");
+        }
+    </script>
+</head>
+<body>
+    <!-- 7b. JavaScript in Body (before HTML content) -->
+    <script>
+        alert("This alert appears before the page content!");
+    </script>
+    
+    <header>
+        <h1>My JavaScript Website</h1>
+    </header>
+    
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+    
+    <main>
+        <h2>Welcome to My Page</h2>
+        <p>This is a demonstration of JavaScript alerts and console messages.</p>
+        
+        <div class="highlight">
+            <h3>JavaScript Features Used:</h3>
+            <ul>
+                <li>Alert boxes in sequence</li>
+                <li>Console messages</li>
+                <li>Multiple script placements</li>
+                <li>Interactive buttons</li>
+            </ul>
+        </div>
+        
+        <button onclick="greetUser()">Click for Greeting</button>
+        <button onclick="alert('Button clicked!')">Click Me</button>
+        <button onclick="console.log('Button clicked at: ' + new Date())">Log to Console</button>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 My JavaScript Project</p>
+    </footer>
+    
+    <!-- Additional script at the end of body -->
+    <script>
+        alert("This is the final alert - Page has loaded!");
+        console.log("Page fully loaded!");
+    </script>
+</body>
+</html>
